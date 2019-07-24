@@ -1,47 +1,47 @@
-var card = $("#quiz-area");
+var QuizArea = $("#quiz-area");
 
 // Question set
-var questions = [
+var triviaQuestions = [
     {
-        question: "What was the first full length CGI movie?",
-        answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-        correctAnswer: "Toy Story"
+        question: "What Canadian province seperates Alaska from the United States?",
+        answers: ["British Columbia", "Alberta", "Saskatchewan", "Quebec"],
+        correctAnswer: "British Columbia"
     },
     {
-        question: "Which of these is NOT a name of one of the Spice Girls?",
-        answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-        correctAnswer: "Fred Spice"
+        question: "Which of these countries borders Paraguay?",
+        answers: ["Venezuela", "Cuba", "Colombia", "Argentina"],
+        correctAnswer: "Argentina"
     },
     {
-        question: "Which NBA team won the most titles in the 90s?",
-        answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-        correctAnswer: "Chicago Bulls"
+        question: "Which of the following is an overseas possession of France?",
+        answers: ["Aruba", "Puerto Rico", "New Caledonia", "Nova Scotia"],
+        correctAnswer: "New Caledonia"
     },
     {
-        question: "Which group released the hit song, 'Smells Like Teen Spirit'?",
-        answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-        correctAnswer: "Nirvana"
+        question: "What U.S. State was Abraham Lincoln from?",
+        answers: ["Illinois", "Kentucky", "Indiana", "Minnesota"],
+        correctAnswer: "Kentucky"
     },
     {
-        question: "Which popular Disney movie featured the song, 'Circle of Life'?",
-        answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-        correctAnswer: "The Lion King"
+        question: "Which of these was the first permanent British colony in North America?",
+        answers: ["Jamestown, VA", "St. Augustine, FL", "Plymouth, MA", "Bermuda"],
+        correctAnswer: "Jamestown, VA"
     },
     {
         question:
-            "Finish this line from the Fresh Prince of Bel-Air theme song: 'I whistled for a cab and when it came near, the license plate said...'",
-        answers: ["Dice", "Mirror", "Fresh", "Cab"],
-        correctAnswer: "Fresh"
+            "Which of these was the first permanent Spanish colony in what is currently the U.S.?",
+        answers: ["St. Augustine, FL", "Albuquerque, NM", "Los Angeles, CA", "Houston, TX"],
+        correctAnswer: "St. Augustine, FL"
     },
     {
-        question: "What was Doug's best friend's name?",
-        answers: ["Skeeter", "Mark", "Zach", "Cody"],
-        correctAnswer: "Skeeter"
+        question: "Which Native American civilization was conquered by Hernan Cortés?",
+        answers: ["Incas", "Iroquois", "Seminole", "Aztecs"],
+        correctAnswer: "Aztecs"
     },
     {
-        question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-        answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-        correctAnswer: "Mr.Belding"
+        question: "What is the predominant religion in Israel?",
+        answers: ["Islam", "Baha'i Faith", "Judaism", "Christianity"],
+        correctAnswer: "Judaism"
     }
 ];
 
@@ -70,21 +70,21 @@ var game = {
 
         $("#start").remove();
 
-        for (var i = 0; i < questions.length; i++) {
-            card.append("<h2>" + questions[i].question + "</h2>");
-            for (var j = 0; j < questions[i].answers.length; j++) {
-                card.append("<input type='radio' name='question-" + i +
-                    "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
+        for (var i = 0; i < triviaQuestions.length; i++) {
+            QuizArea.append("<h2>" + triviaQuestions[i].question + "</h2>");
+            for (var j = 0; j < triviaQuestions[i].answers.length; j++) {
+                QuizArea.append("<input type='radio' name='question-" + i +
+                    "' value='" + triviaQuestions[i].answers[j] + "''>" + triviaQuestions[i].answers[j]);
             }
         }
 
-        card.append("<button id='done'>Done</button>");
+        QuizArea.append("<button id='done'>Done</button>");
     },
 
     done: function () {
-        var inputs = card.children("input:checked");
+        var inputs = QuizArea.children("input:checked");
         for (var i = 0; i < inputs.length; i++) {
-            if ($(inputs[i]).val() === questions[i].correctAnswer) {
+            if ($(inputs[i]).val() === triviaQuestions[i].correctAnswer) {
                 game.correct++;
             } else {
                 game.incorrect++;
@@ -98,9 +98,9 @@ var game = {
 
         $("#sub-wrapper h2").remove();
 
-        card.html("<h2>All Done!</h2>");
-        card.append("<h3>Correct Answers: " + this.correct + "</h3>");
-        card.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
+        QuizArea.html("<h2>All Done!</h2>");
+        QuizArea.append("<h3>Correct Answers: " + this.correct + "</h3>");
+        QuizArea.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
     }
 };
 

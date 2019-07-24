@@ -1,0 +1,70 @@
+/* Color Palette */
+/* Background styles */
+body {
+    background: -webkit-radial-gradient(circle closest-side at 50px 50px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 40px 60px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 60px 60px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 50px 70px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 150px 165px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 140px 175px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 160px 175px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 150px 185px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(ellipse closest-side at 50px 60px, #f9a734 18px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(ellipse closest-side at 150px 175px, #f9a734 18px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 30px 40px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 40px 35px, #36964c 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 70px 40px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 60px 35px, #286e38 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 130px 155px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(circle closest-side at 140px 150px, #36964c 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(170px 155px circle, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), -webkit-radial-gradient(160px 150px circle, #286e38 15px, rgba(0, 0, 0, 0) 0%);
+    background: radial-gradient(circle closest-side at 50px 50px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 40px 60px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 60px 60px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 50px 70px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 150px 165px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 140px 175px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 160px 175px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 150px 185px, #fb8b24 3px, rgba(0, 0, 0, 0) 0%), radial-gradient(ellipse closest-side at 50px 60px, #f9a734 18px, rgba(0, 0, 0, 0) 0%), radial-gradient(ellipse closest-side at 150px 175px, #f9a734 18px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 30px 40px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 40px 35px, #36964c 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 70px 40px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 60px 35px, #286e38 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 130px 155px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle closest-side at 140px 150px, #36964c 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle at 170px 155px, #f9d8d4 15px, rgba(0, 0, 0, 0) 0%), radial-gradient(circle at 160px 150px, #286e38 15px, rgba(0, 0, 0, 0) 0%);
+    background-color: #F9D8D4;
+    background-size: 180px 210px;
+    -webkit-animation: animatedBackground 0.5s cubic-bezier(0.61, -0.64, 0.58, 1.46) forwards;
+            animation: animatedBackground 0.5s cubic-bezier(0.61, -0.64, 0.58, 1.46) forwards;
+  }
+  
+  /* Animation */
+  @-webkit-keyframes animatedBackground {
+    from {
+      background-position: 0 50%;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 50%;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+h1 {
+    font-family: 'Geo', sans-serif;
+    text-align: center;
+    color:darkgreen;
+}
+
+h2 {
+    font-family: 'Geo', sans-serif;
+    text-align: center;
+    color:darkgreen;
+}
+p, button {color:darkgreen;}
+#wrapper{
+align-content: center;
+text-align:center;
+text-align: center;
+background-color:orange;
+margin-top:5%;
+margin-left: 25%;
+margin-right:25%;
+padding:5%;
+border: green;
+border-width:5px;
+border-style:solid;
+}
+
+#start{
+align-content:center;
+text-align:center;
+}
+
+#quiz-area{
+    align-content:center;
+    text-align:center;
+}
+
+#counter-number
+{
+    font-family: 'Geo', sans-serif;
+    text-align: center;
+}
