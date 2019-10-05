@@ -12,4 +12,4 @@ Trivia Game is a simple, client-side javascript and jquery-based letter guess ga
 ## Thanks
 
 * [Mozilla Developers Network](https://developer.mozilla.org/en-US/docs/Web/javascript)
-* [Jquery](https://jquery.com)
+* [jQuery](https://jquery.com)
